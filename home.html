@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Study Buddy</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loader">Loading...</div>
+
+  <div class="container hidden">
+    <div class="mascot-box">
+    <img src="picture/654214899aad8882e50b891d7aa8721d.png" alt="Mascot" class="mascot"/>
+ <div class="speech-bubble">Let's get started!</div>
+    </div>
+    <h1>Welcome to <span>Study Buddy!</span></h1>
+    <p>Organize your notes with magic, sparkles, and good vibes</p>
+    <a href="index.html" class="cute-button">Enter the Site</a>
+  <!-- Background Music -->
+  <audio id="bg-music" src="audio/spring-lofi-vibes-lofi-music-340019.mp3" loop></audio>
+  <footer class="cute-footer">
+  <div class="footer-content">
+    <p>🌸 Made with love for students everywhere </p>
+    <p>&copy; 2025 StudyCloud — All Rights Reserved.</p>
+  </div>
+</footer>
+  <!-- Sakura Petals JS -->
+  <script src="sakura.js"></script>
+
+  <!-- Music Trigger -->
+  <script>
+    const music = document.getElementById('bg-music');
+    window.addEventListener('click', () => {
+      music.play();
+    });
+
+    // Loader effect
+    window.addEventListener('load', () => {
+      document.getElementById('loader').style.display = 'none';
+      document.querySelector('.container').classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>

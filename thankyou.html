@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Complete ✨ | Study Buddy</title>
+  <link rel="stylesheet" href="style-thankyou.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="thankyou-container">
+    <img src="picture/b520bae0e3b1beb35b789e431d9eec9b.png" class="mascot" alt="Mascot cheering">
+    <h1>✨ Thank You for Uploading! ✨</h1>
+    <p>Your notes have been safely stored in your magic notebook </p>
+    <a href="index.html" class="cute-button">⬅ Back to Upload More</a>
+  </div>
+  <!-- Background Music -->
+  <audio id="bg-music" src="audio/spring-lofi-vibes-lofi-music-340019.mp3" loop></audio>
+
+  <!-- Music Trigger -->
+  <script>
+    const music = document.getElementById('bg-music');
+    window.addEventListener('click', () => {
+      music.play();
+    });
+  </script>
+</body>
+</html>

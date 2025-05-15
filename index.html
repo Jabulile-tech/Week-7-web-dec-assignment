@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyMate Upload</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+        <a href="home.html" class="cute-button">⬅Home</a>
+  <div class="container">
+    <h1> Upload Your Study Materials</h1>
+    <form id="uploadForm">
+      <div id="dropZone">📂 Drag & Drop your file here or click to select</div>
+      <input type="file" id="fileInput" style="display: none" required />
+
+      <select id="subjectSelect" required>
+        <option value="">-- Choose Subject --</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input type="text" id="customSubject" placeholder="Custom Subject (if 'Other')" style="display:none;" />
+      <button type="submit">Upload</button>
+    </form>
+
+    <input type="text" id="searchInput" placeholder="🔍 Search by filename or subject..." />
+
+    <div id="materialsContainer"></div>
+  </div>
+
+  <!-- Floating Mascot -->
+  <div id="mascot">
+    <img src="picture/35a6e4acd9402224b8eeeb7b0d0b28d2.png" alt="Mascot" />
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="audio/spring-lofi-vibes-lofi-music-340019.mp3" loop></audio>
+  
+<a href="thankyou.html" class="cute-button">DONE?</a>
+  <script src="script.js"></script>
+</body>
+<footer class="cute-footer">
+  <div class="footer-content">
+    <p>🌸 Made with love for students everywhere </p>
+    <p>&copy; 2025 StudyCloud — All Rights Reserved.</p>
+  </div>
+</footer>
+<script>
+  const music = document.getElementById('bg-music');
+  window.addEventListener('click', () => {
+    music.play();
+  });
+</script>
+</html>
+

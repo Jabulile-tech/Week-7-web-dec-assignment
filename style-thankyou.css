@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffedf7, #d5f7ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.thankyou-container {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.4);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+
+.mascot {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Cherry Bomb One', cursive;
+  color: #ff69b4;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* File List */
+.file-list {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.file-list h2 {
+  color: #6ec8f1;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.file-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.file-list li {
+  padding: 0.5rem 1rem;
+  background: #fdf3f8;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.2);
+}
+
+/* Button */
+.cute-button {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+
+.cute-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffc0cb;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .mascot {
+    width: 90px;
+  }
+
+  .cute-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+.cute-button {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.4);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.cute-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+}
+
